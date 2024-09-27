@@ -11,7 +11,6 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
 import com.example.pdfreader.SharedViewModel
-import com.example.pdfreader.navigation.Screen
 
 @Composable
 fun MainScreen(

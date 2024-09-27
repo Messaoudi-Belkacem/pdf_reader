@@ -44,7 +44,7 @@ class MainActivity : ComponentActivity() {
     // Add this to handle result from file picker
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
-        if (requestCode == PICK_PDF_REQUEST && resultCode == Activity.RESULT_OK && data != null) {
+        if (requestCode == PICK_PDF_REQUEST && resultCode == RESULT_OK && data != null) {
             val pdfUri: Uri? = data.data
             // call pdfPage screen on this pdf uri
             pdfUri?.let {
