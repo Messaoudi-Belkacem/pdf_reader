@@ -9,7 +9,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.pdfreader.SharedViewModel
 import com.example.pdfreader.ui.screen.MainScreen
-import com.example.pdfreader.ui.screen.PdfPage
+import com.example.pdfreader.ui.screen.PdfViewerScreen
 
 @Composable
 fun RootNavigationGraph(
@@ -55,7 +55,7 @@ fun RootNavigationGraph(
             )
         }
         composable(route = Screen.Reader.route) {
-            PdfPage(
+            PdfViewerScreen(
                 sharedViewModel = sharedViewModel,
             )
         }
